@@ -1,0 +1,17 @@
+<html>
+<body>
+<p>
+<ul>
+    Ale super {{ albums }}
+    {% for album in albums %}
+        <li>{{ album.title }}</li>
+    {% endfor %}
+</p>
+<p>
+    Rok założenia: {{ band.year }} <br />
+    Aktywny: {{ band.still_active }} <br />
+    Typ: {{ band.genre }} <br />
+</p>
+</ul>
+</body>
+</html>
